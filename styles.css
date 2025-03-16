@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background-color: #f8f4f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  h1 {
+    background-color: #d94f30;
+    color: white;
+    padding: 15px 0;
+    margin: 0 0 20px;
+    font-size: 32px;
+  }
+
+  #ramen-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    overflow-x: auto;
+  }
+  
+  #ramen-menu img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  #ramen-menu img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(217, 79, 48, 0.6);
+  }
+  
+  #ramen-detail {
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #d94f30;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  #detail-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  #delete-ramen {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #d94f30;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #delete-ramen:hover {
+    background-color: #b63d24;
+  }
+  
+  #ramen-detail:hover #delete-ramen {
+    display: block;
+  }
+  
+  /* Form section */
+  form {
+    background: white;
+    padding: 25px;
+    width: 50%;
+    margin: 40px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  form h2 {
+    color: #d94f30;
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+  }
+  
+  input,
+  button {
+    display: block;
+    width: 100%;
+    margin: 8px 0 15px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #d94f30;
+    box-shadow: 0 0 4px rgba(217, 79, 48, 0.5);
+  }
+  
+  button {
+    background: #d94f30;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #b63d24;
+  }
+  
