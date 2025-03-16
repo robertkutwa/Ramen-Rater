@@ -120,6 +120,12 @@ const ramens = [
     detailBox.addEventListener("mouseleave", () => {
       deleteBtn.style.display = "none";
     });
+  
+    // 🌙 Dark Mode Toggle
+    const toggleBtn = document.getElementById("toggle-theme");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
   }
   
   document.addEventListener("DOMContentLoaded", main);
